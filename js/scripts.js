@@ -47,6 +47,32 @@ function finalSelector() {
   }
 };
 
+function linkMaker() {
+  const snake = finalSelector();
+  const link1 = $('<a>');
+  link1.attr("href", "https://www.python.org/");
+  link1.attr("title", "Python.org");
+  link1.text("Python");
+  link1.addClass("link");
+
+
+
+
+
+
+
+
+
+
+
+
+  if (snake === 'Python') {
+    return link1;
+  }
+}
+
+
+
 
 //UI Logic
 
@@ -57,8 +83,15 @@ $(document).ready(function(){
    
     
     $('.nameOutput').text(nameInput);
-    $('.langOutput').text(finalSelector());
-    $('.outputContainer').show();
+    $('.langOutput').append(linkMaker());
+    $('#outputContainer').show();
     $('form#formOne')[0].reset();
   })
 })
+
+
+// const snake = finalSelector();
+//   const link = document.createElement('<a>');
+//   link.textContent = 'Python';
+//   link.href = 'https://www.python.org/';
+//   const test = $('').append(link);
