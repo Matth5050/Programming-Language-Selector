@@ -6,10 +6,21 @@ function Python() {
   const qThree = $("input:radio[name=question3]:checked").val();
   const qFour = $("input:radio[name=question4]:checked").val();
   const qFive = $("input:radio[name=question5]:checked").val();
-  const result = 'Python'
+  const pythonResult = 'Python'
 
   if (qOne === 'yes' && qTwo === 'desert' || qOne === 'yes' && qTwo === 'tropical') {
-    return result;
+    return pythonResult;
+  };
+};
+
+function Swift() {
+  const qOne = $("input:radio[name=question1]:checked").val();
+  const qThree = $("input:radio[name=question3]:checked").val();
+  const qFour = $("input:radio[name=question4]:checked").val();
+  const swiftResult = 'Swift'
+
+  if (qOne === 'no' && qFour === 'mac'|| qOne === 'no' && qThree === 'boba') {
+    return swiftResult;
   };
 };
 
