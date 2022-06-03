@@ -48,31 +48,41 @@ function finalSelector() {
 };
 
 function linkMaker() {
-  const snake = finalSelector();
+  const selector = finalSelector();
   const link1 = $('<a>');
   link1.attr("href", "https://www.python.org/");
   link1.attr("title", "Python.org");
   link1.text("Python");
   link1.addClass("link");
 
+  const link2 = $('<a>');
+  link2.attr("href", "https://www.swift.org/");
+  link2.attr("title", "Swift.org");
+  link2.text("Swift");
+  link2.addClass("link");
 
+  const link3 = $('<a>');
+  link3.attr("href", "https://docs.microsoft.com/en-us/dotnet/csharp/");
+  link3.attr("title", "docs.microsoft.com");
+  link3.text("C#");
+  link3.addClass("link");
 
+  const link4 = $('<a>');
+  link4.attr("href", "https://developer.mozilla.org/en-US/docs/Web/JavaScript");
+  link4.attr("title", "developer.mozilla.org");
+  link4.text("JavaScript");
+  link4.addClass("link");
 
-
-
-
-
-
-
-
-
-  if (snake === 'Python') {
+  if (selector === 'Python') {
     return link1;
+  } else if (selector === 'Swift') {
+    return link2;
+  } else if (selector === 'C#') {
+    return link3;
+  } else {
+    return link4;
   }
 }
-
-
-
 
 //UI Logic
 
