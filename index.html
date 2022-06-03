@@ -16,8 +16,8 @@
   <h4>Please select the best options from below to have the programming language perfect for you revealed!</h4>
   <form id="formOne"> <!-- Form -->
     <div class="form-group name"> <!-- Name Input -->
-      <label for="person1">Please enter your name</label>
-      <input id="person1" class="form-control" type="text">
+      <!-- <label for="person1">Please enter your name</label> -->
+      <input placeholder="Name" id="person1" class="form-control" type="text">
     </div> <!-- End Name Input -->
     <div class="form-group"> <!-- Question 1 -->
       <div class="radio">
@@ -118,11 +118,10 @@
         </label>
       </div> 
     </div> <!-- End Question 5-->
-    <div class="row">
       <button type="submit" class="btn btn-primary">Press for results!</button>
-      <div class="outputContainer">
-        <p>Hello <span class="nameOutput"></span>, our crystal ball says <span class="langOutput"></span> is right for you!</p>
-      </div>
+    </div>
+    <div id="outputContainer">
+      <p>Hello <span class="nameOutput"></span>, our crystal ball says <span class="langOutput"></span> is right for you!</p>
     </div>
   </form> <!-- End Form -->
 </div>
