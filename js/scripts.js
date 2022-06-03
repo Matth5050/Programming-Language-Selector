@@ -31,7 +31,17 @@ function cSharp() {
   };
 };
 
-
+function finalSelector() {
+  if (python === true) {
+    return python();
+  } else if (swift === true) {
+    return swift();
+  } else if (cSharp === true) {
+    return cSharp();
+  } else {
+    return 'JavaScript';
+  }
+};
 
 
 
