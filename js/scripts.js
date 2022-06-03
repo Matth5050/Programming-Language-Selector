@@ -1,5 +1,6 @@
 //Business Logic
 
+// Selects for Python
 function python() {
   const qOne = $("input:radio[name=question1]:checked").val();
   const qTwo = $("input:radio[name=question2]:checked").val();
@@ -9,6 +10,7 @@ function python() {
   };
 };
 
+// Selects for Swift
 function swift() {
   const qOne = $("input:radio[name=question1]:checked").val();
   const qThree = $("input:radio[name=question3]:checked").val();
@@ -19,6 +21,7 @@ function swift() {
   };
 };
 
+// Selects for C#
 function cSharp() {
   const qOne = $("input:radio[name=question1]:checked").val();
   const qFive = $("input:radio[name=question5]:checked").val();
@@ -28,6 +31,7 @@ function cSharp() {
   };
 };
 
+// Selects for Python
 function finalSelector() {
   const snake = python();
   const iphone = swift();
