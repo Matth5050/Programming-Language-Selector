@@ -87,17 +87,23 @@ function linkMaker() {
 //UI Logic
 
 $(document).ready(function(){
+  $("button#button").click(function() {
+      $('.langOutput').children("a:nth-child(1)").remove();
+    });
+  });
+
+$(document).ready(function(){
   $("form#formOne").submit(function(event) {
     event.preventDefault();
     const nameInput = $('input#person1').val()
    
-    
     $('.nameOutput').text(nameInput);
-    $('.langOutput').append(linkMaker());
+    $('.langOutput').prepend(linkMaker());
     $('#outputContainer').show();
     $('form#formOne')[0].reset();
-  })
-})
+  });
+});
+
 
 
 // const snake = finalSelector();
