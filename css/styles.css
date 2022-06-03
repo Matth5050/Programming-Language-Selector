@@ -2,6 +2,22 @@ body {
   background:linear-gradient(to right, rgba(173, 185, 240, 0.5), rgba(217, 192, 242, 0.5));
 }
 
+h1, h4 {
+  font-family: 'Bree Serif', serif;
+}
+
+.span1 {
+  background:linear-gradient(to right, rgba(242, 44, 44, 1), rgba(240, 180, 76, 1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.span2 {
+  background: linear-gradient(to right, rgba(240, 180, 76, 1), rgba(135, 166, 23, 1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 #outputContainer {
   display: none;
   padding-left: 15px;
