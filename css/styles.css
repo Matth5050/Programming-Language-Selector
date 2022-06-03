@@ -18,6 +18,36 @@ h1, h4 {
   -webkit-text-fill-color: transparent;
 }
 
+.span3 {
+  background: linear-gradient(to right, rgba(149, 166, 23, 1), rgba(67, 229, 227, 1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.span4 {
+  background: linear-gradient(to right, rgba(67, 229, 227, 1), rgba(130, 175, 247, 1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.span5 {
+  background: linear-gradient(to right, rgba(130, 175, 247, 1), rgba(166, 141, 226, 1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.span6 {
+  background: linear-gradient(to right, rgba(166, 141, 226, 1), rgba(255, 128, 227, 1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.span7 {
+  background: linear-gradient(to right, rgba(255, 128, 227, 1), rgba(238, 47, 47, 1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 #outputContainer {
   display: none;
   padding-left: 15px;
