@@ -47,6 +47,7 @@ function finalSelector() {
   }
 };
 
+// Takes the result of finalSelector and creates an appropriate link 
 function linkMaker() {
   const selector = finalSelector();
   const link1 = $('<a>');
@@ -103,11 +104,3 @@ $(document).ready(function(){
     $('form#formOne')[0].reset();
   });
 });
-
-
-
-// const snake = finalSelector();
-//   const link = document.createElement('<a>');
-//   link.textContent = 'Python';
-//   link.href = 'https://www.python.org/';
-//   const test = $('').append(link);
