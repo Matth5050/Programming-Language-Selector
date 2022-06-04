@@ -52,16 +52,16 @@ h1, h4 {
   display: none;
   padding-left: 15px;
   font-size: 1.5rem;
+  margin-top: 10px;
 }
 
 #btnContainer {
- margin-bottom: 10px;
- margin-left: -13px;
- margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: -13px;
+  margin-top: 20px;
 }
 
 .btn {
-  
   border:none;
   font-size: 40px;
   cursor: pointer;
@@ -69,16 +69,15 @@ h1, h4 {
   transition: .5s;
 } 
 
-
-  .btn::before {
-    content: "";
-    position: absolute;
-    height: 50%;
-    width: 50%;
-    background: linear-gradient(to right, rgba(242, 44, 44, 1), rgba(240, 180, 76, 1)); 
-    z-index: -1;
-    filter: blur(20px);
-  }
+.btn::before {
+  content: "";
+  position: absolute;
+  height: 50%;
+  width: 50%;
+  background: linear-gradient(to right, rgba(242, 44, 44, 1), rgba(240, 180, 76, 1)); 
+  z-index: -1;
+  filter: blur(20px);
+}
   
 
 
